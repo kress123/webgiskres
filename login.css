@@ -1,0 +1,126 @@
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background halaman login dengan gradiasi */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Bagian kiri: Informasi */
+.info-container {
+    width: 50%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+}
+
+.info-container h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.info-container p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Bagian kanan: Login form */
+.login-container {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Efek shadow pada input */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol login */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Warna tombol */
+#loginUser {
+    background: #28a745;
+    color: white;
+}
+
+#loginUser:hover {
+    background: #218838;
+}
+
+#loginAdmin {
+    background: #007bff;
+    color: white;
+}
+
+#loginAdmin:hover {
+    background: #0056b3;
+}
+
+#register {
+    background: #ffc107;
+    color: black;
+}
+
+#register:hover {
+    background: #e0a800;
+}
+
+/* Responsif: Tampilan tablet & mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-container, .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .info-container h1 {
+        font-size: 22px;
+    }
+}
